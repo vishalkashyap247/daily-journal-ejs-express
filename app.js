@@ -82,6 +82,6 @@ app.post('/compose', function(req, res)
     }
   });
   
-  app.listen(port, function() {
+  app.listen(process.env.PORT || port, function() {
     console.log(`Server started at port 3000 http://localhost:${port}`);
 });
