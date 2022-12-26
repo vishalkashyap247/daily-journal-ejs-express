@@ -1,0 +1,30 @@
+<%- include('partials/header') -%>
+<h1>Home</h1>
+<p>
+    <%= data %>
+</p>
+<hr>
+<h3>My Posts</h3>
+<% if(allPost.length==0)
+{ %>
+    <p>No post to display</p>
+<% } 
+else
+{  
+    allPost.forEach(function(element)
+    { 
+        var string = element.content;
+        if(string.length > 100)
+        {
+            string = string.slice(0,100) + "...";%>
+            <h4> <%= element.title %> </h4>
+            <p> <%= string %> <a href="/posts/<%= element.title %>">Read More</a></p>
+        <% }
+        else
+        { %>
+            <h4> <%= element.title %> </h4>
+            <p> <%= element.content %> </p>
+        <% }
+     });
+} %>
+<%- include('partials/footer') -%>
