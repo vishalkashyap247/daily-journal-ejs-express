@@ -1,5 +1,8 @@
 # daily-journal-ejs-express link: https://daily-journal-express.onrender.com/
 
+Note: I have used MongoDB with this, but I have not studied authentication and security yet thats why I'm not updating it. 
+<br /><br />
+
 I have used Express, EJS for dynamic pages
 
 ![Screenshot (434)](https://user-images.githubusercontent.com/103761502/209527106-89022e5b-6840-4797-b149-954dfefcff7e.png)
